@@ -1,0 +1,180 @@
+body {
+        font-size: 25px;
+        line-height: 35px;
+        background-color: rgb(60,100,80);
+        overflow-x: hidden;
+      }
+  /* Resizing the window might mess up the whole layout. Even though it took me hours to figure this out. I wasn't brave enough to use javascript.*/
+
+      ul, li {
+        display:inline;
+      }
+      #nav-wrap {
+        color:white;
+        position: sticky;
+        width: 37em;
+        bottom: 10px;
+        overflow: visible;
+        top: 0;
+        background-color: teal;
+        border-radius: 20px;
+        height:auto;
+        padding: 0.1em;
+        z-index: 9999;
+      }
+      ul#navbar {
+        position: relative;
+        bottom: 2em;
+        text-align: center;
+        
+        font-weight: bold;
+      }
+      ul#navbar li a {
+        text-decoration:none;
+        color: white;
+        background: darkred;
+        font-family: "Arial Black", sans-serif ;
+        font-size: 0.65em;
+        padding: 0.8em 0.5em;
+        margin: 0.1em;
+        position: relative;
+        bottom: -0.5em;
+        left: 2em;
+        text-align: center;
+        border-top: 6px solid red;
+        border-right: 6px solid black;
+        border-bottom: 6px solid black;
+        border-left: 6px solid red;
+        border-radius: 20px;
+      }
+      /* this I had to ask Mr. Google, couldn't find another workaround to stop my back to the top navbar anchors directing far too low*/
+
+      h1:target::before {
+        content: "";
+        display: block;
+        height: 10px;
+        margin: 2px 0 0;
+      }
+      ul#navbar li a:hover {
+        text-decoration:none;
+        color: black;
+        background: red;
+        padding: 0.8em 0.5em;
+        margin: 0.1em;
+        position: relative;
+        bottom: 0.5em;
+        left: 2em;
+        text-align: center;
+        border-top: 6px solid black;
+        border-right: 6px solid black;
+        border-bottom: 6px solid black;
+        border-left: 6px solid black;
+        border-radius: 20px;
+      }
+      #logo {
+        width: 80px;
+        position:relative;
+        left: 2em;
+        bottom: 0.3em;
+        margin-top:1em;
+        border-radius: 20px;
+      }
+      #top {
+        width: 100px;
+        height: 100px;
+        position:relative;
+        left: 0.1em;
+      }
+      #title {
+        color: rgb(250, 200, 0);
+        font-size: 2.5em;
+        font-family: Courier, serif;
+        font-style: italic;
+        position:absolute;
+        top: -20px;
+        left: 1099px;
+        padding-top: 1px;
+
+      }
+      .red-letter {
+        color:red;
+      }
+      .yellow-letter {
+        color:yellow;
+      }
+      .chapters  {
+        overflow:auto;
+        padding-top: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom:20px;
+        text-align: justify;
+        border-radius: 40px;
+        margin-bottom: 100px;
+        font-family: "Arial", sans-serif;
+        font-size: 1.1em;
+      
+      }
+      #chapter1 {
+        background-image: linear-gradient(darkslategray, gray);
+        color:white;
+        
+      }
+      #chapter2 {
+        background-image: linear-gradient(to bottom, thistle, purple);
+        color:white;
+      }
+      #chapter3 {
+        background-image: linear-gradient(to top, khaki, yellow);
+        color:darkgreen;
+
+      }
+      #chapter4 {
+        background-image: linear-gradient(red,violet);
+        color:white;
+
+      }
+      #chapter5 {
+        color:white;
+        background-image: linear-gradient(darkolivegreen, black);
+      }
+      div .chapter-name {
+        font-size: 35px;
+        font-family: "Comic Sans MS", sans-serif;
+        text-decoration: underline;
+        text-align: right;
+        padding-right:4em;
+      }
+      div .image-right {
+        float: right;
+        width: 20%;
+        height: auto;
+        padding-left: 40px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-right: 15px;
+        border-radius:70px;
+      }
+      div .image-left {
+        float: left;
+        width: 20%;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        padding-top: 7px;
+        padding-left: 10px;
+        border-radius:70px;
+      }
+      footer {
+        color: white;
+        font-size: 0.7em;
+        text-decoration: none;
+        text-align: center;
+      }
+      #email {
+        text-decoration: underline;
+        color: white;
+      }
+
+      .anchors {
+        height:15px;
+      }
